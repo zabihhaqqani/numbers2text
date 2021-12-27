@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish&family=Prompt&display=swap");
+* {
+  font-family: prompt;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #9dcc5f;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  padding: 1rem;
+  font-size: xx-large;
+}
+
+main {
+  display: flex;
+}
+textarea {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  height: 30vh;
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  border-radius: 2rem;
+  width: 50%;
+}
+.output {
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  height: 30vh;
+  width: 50%;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+button {
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: large;
+  border: 3px solid rgba(0, 0, 0, 0.534);
+  background-color: var(--primary);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer .link {
+  color: rgb(0, 0, 0);
+}
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+/* links */
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
