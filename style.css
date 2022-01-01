@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish&family=Nunito&family=Prompt&display=swap');*,
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish&family=Nunito&family=Prompt&display=swap");
+*,
 *::before,
 *::after {
   font-family: nunito;
@@ -45,12 +46,19 @@ textarea {
   border-radius: 2rem;
 }
 
+button:hover {
+  background-color: #009dffa2;
+  border: 3px solid rgba(0, 0, 0, 0.856);
+
+  transition: 0.5;
+}
+
 button {
   border-radius: 2rem;
   padding: 1rem;
   margin: 1rem;
   font-size: large;
-  border: 3px solid rgba(0, 0, 0, 0.534);
+  border: 3px solid rgba(0, 0, 0, 0.664);
   background-color: var(--primary);
 }
 
@@ -106,8 +114,7 @@ button {
   padding: 0rem 0.5rem;
 }
 
-.numbersImg{
+.numbersImg {
   display: flex;
   justify-content: center;
-  
 }

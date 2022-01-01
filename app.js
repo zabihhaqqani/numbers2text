@@ -8,9 +8,8 @@ btnTranslate.addEventListener("click", function clickEventHandler(){
    
 });
 
-//mock api 
+// api 
 let serverURL = "https://api.funtranslations.com/translate/numbers.json";
-
 
 function getTranslationURL(text) {
     return serverURL + "?" + "text=" + text ;
@@ -22,13 +21,13 @@ function errorHandler(error) {
 }
 
 function clickEventHandler() {  
-    let inputText = input.value;
+    let inputText = input.value; //taking input
     output.innerText = "Translating......................."
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => {
         let translatedText = json.contents.translated;
-        output.innerText = translatedText;
+        output.innerText = translatedText; // giving output
     })
     .catch (errorHandler)
 };
