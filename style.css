@@ -1,26 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish&family=Prompt&display=swap");
-* {
-  font-family: prompt;
-  /* margin: 0px; */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish&family=Nunito&family=Prompt&display=swap');*,
+*::before,
+*::after {
+  font-family: nunito;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
-  margin: 0;
-}
+
 :root {
-  --primary: #9dcc5f;
+  --primary: #1da1f2;
 }
+
 h1 {
   display: flex;
   justify-content: center;
   background-color: var(--primary);
   padding: 1rem;
   font-size: xx-large;
+  text-align: center;
 }
 
 main {
   display: flex;
+  flex-grow: 1;
 }
+
 textarea {
   display: block;
   padding: 1rem;
@@ -30,7 +34,8 @@ textarea {
   border-radius: 2rem;
   width: 50%;
 }
-.output {
+
+#outputText {
   border: 3px solid rgba(0, 0, 0, 0.664);
   height: 30vh;
   width: 50%;
@@ -39,6 +44,7 @@ textarea {
   margin: 1rem;
   border-radius: 2rem;
 }
+
 button {
   border-radius: 2rem;
   padding: 1rem;
@@ -48,10 +54,17 @@ button {
   background-color: var(--primary);
 }
 
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   display: flex;
   justify-content: center;
 }
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -72,6 +85,7 @@ button {
 .footer .link {
   color: rgb(0, 0, 0);
 }
+
 .footer .footer-header {
   font-weight: bold;
   font-size: large;
@@ -90,4 +104,10 @@ button {
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;
+}
+
+.numbersImg{
+  display: flex;
+  justify-content: center;
+  
 }

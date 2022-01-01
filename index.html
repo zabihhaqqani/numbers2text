@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoda</title>
+    <title>Number to Words</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="flex-wrap">
     <nav>
-      <h1>Yoda Translator</h1>
+      <h1>Number to Words Translator</h1>
     </nav>
     <div class="container">
-      <img src="./Baby Yoda.svg" height="150px" width="150px" alt="" />
     </div>
     <main>
       <textarea
-        id=""
+        id="inputText"
         placeholder="Enter your sentence here and click on translate it will be converted to yoda language"
       ></textarea>
-      <div class="output"></div>
-    </main>
-    <div class="btn-container"><button>Translate</button></div>
+      <div id="outputText"></div>
+      
+  </main>
+  <div class="numbersImg"><img src="./number-blocks.png"  height="100px" width="100px" alt="numbers"></div>
+
+    <div class="btn-container"><button id="btnTranslate">Translate</button></div>
     <footer class="footer">
         <div class="footer-header">SOCIAL MEDIA</div>
         <ul class="link social-handles list-non-bullet  ">
@@ -29,6 +32,7 @@
             <li class="list-item-inline" > <a class="link social-handles" href="https://www.linkedin.com/in/zabih-haqqani-7ab187191/" target="_blank" >LinkedIn </a> </li>
             <li class="list-item-inline" > <a  class="link social-handles" href="https://twitter.com/zabih01" target="_blank" >Twitter </a> </li>
         </ul>
-    </footer>
+    </footer></div>
+    <script src="./app.js" type="text/javascript"></script>
   </body>
 </html>
