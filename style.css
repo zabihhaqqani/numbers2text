@@ -35,7 +35,7 @@ main {
   margin: auto;
   height: 20vh;
   border: 3px solid rgba(0, 0, 0, 0.664);
-  width: 80%;
+  width: 50%;
   margin-top: 1rem;
   background-color: rgb(255, 255, 255);
 }
@@ -114,4 +114,13 @@ h2 {
 body {
   background-image: url(./bg.png);
   background-repeat: round;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  #inputText,
+  #outputText {
+    width: 100%;
+  }
 }
