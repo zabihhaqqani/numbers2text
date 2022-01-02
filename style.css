@@ -36,7 +36,7 @@ main {
   height: 20vh;
   border: 3px solid rgba(0, 0, 0, 0.664);
   width: 50%;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   position: relative;
   background-color: rgb(255, 255, 255);
 }
