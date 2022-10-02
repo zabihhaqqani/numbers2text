@@ -17,6 +17,9 @@ function errorHandler(error) {
 }
 
 function clickEventHandler() {
+  if(input.value === ""){
+  output.innerText = "Enter a proper value : 123..."
+}else{
   let inputText = input.value; //taking input
   output.innerText = "Translating.....";
   fetch(getTranslationURL(inputText))
@@ -25,7 +28,7 @@ function clickEventHandler() {
       let translatedText = json.contents.translated;
       output.innerText = translatedText; // giving output
     })
-    .catch(errorHandler);
+    .catch(errorHandler);}
 }
 
 btnTranslate.addEventListener("click", clickEventHandler);
